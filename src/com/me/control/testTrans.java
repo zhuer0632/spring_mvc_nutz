@@ -20,7 +20,7 @@ public class testTrans
 
 	@Autowired
 	private test01Biz test01Biz;
-
+	
 	@SuppressWarnings("unchecked")
 	@RequestMapping("test00")
 	public @ResponseBody
@@ -39,24 +39,7 @@ public class testTrans
 	}
 	
 	
-	@SuppressWarnings("unchecked")
-	@RequestMapping("test01")
-	public @ResponseBody
-	Map test01()
-	{
-		Map map = new HashMap();
-		try
-		{
-			test01Biz.test01();
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
-		return map;
-	}
 	
-	 
 
 
 }

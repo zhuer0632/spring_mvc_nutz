@@ -36,10 +36,11 @@
 		<!--  超时不用，就关闭连接,单位秒 -->
 		<property name="MaxIdleTime" value="60" />
 	</bean>
-	
+
 	<!--所有services-->
 	<!-- 自动检测注解 -->
 	<context:component-scan base-package="com.me.biz" />
+	<context:component-scan base-package="com.me.init" />
 
 	<!-- 将datasource交spring事务管理 -->
 	<bean id="txManager"
@@ -50,11 +51,9 @@
 	<!-- 开启事务注解功能 -->
 	<tx:annotation-driven transaction-manager="txManager" />
 
-	<!-- 声明一个jdbcTemplate,java类中@Autowired能按类型注入 -->
-	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-		<property name="dataSource">
-			<ref bean="dataSource" />
-		</property>
+	<!-- spring集成 NutDao -->
+	<bean id="dao" class="org.nutz.dao.impl.NutDao" scope="singleton">
+		<property name="dataSource" ref="dataSource" />
 	</bean>
 
 </beans>

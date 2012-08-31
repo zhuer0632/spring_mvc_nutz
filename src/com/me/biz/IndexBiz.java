@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
-
 @Controller
 public class IndexBiz
 {
@@ -14,7 +13,7 @@ public class IndexBiz
 
 	public void getPerson(ModelAndView mod)
 	{
-		mod.addObject("user", personBiz.getPerson());
+		
 	}
 
 }

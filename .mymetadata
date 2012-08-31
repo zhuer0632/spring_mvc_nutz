@@ -3,11 +3,11 @@
   type="WEB"
   name="spring_mvc_nutz"
   id="myeclipse.1345527609230"
-  context-root="/spring_mvc_jdbc"
+  context-root="/spring_mvc_nutz"
   j2ee-spec="5.0"
   archive="spring_mvc_nutz.war">
   <attributes>
-    <attribute name="webrootdir" value="WebRoot" />
+    <attribute name="webrootdir" value="/WebRoot" />
   </attributes>
 </project-module>
 

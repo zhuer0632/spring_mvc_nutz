@@ -24,7 +24,6 @@ public class person
         ModelAndView mod = new ModelAndView();
         try
         {
-            personBiz.addperson();
         }
         catch (Exception e)
         {
