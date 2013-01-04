@@ -114,7 +114,7 @@ public class VOPerson
 		{
 			e.printStackTrace();
 		}
-		ds.setJdbcUrl("jdbc:jtds:sqlserver://localhost:1433/db_springmvc_nutz");
+		ds.setJdbcUrl("jdbc:jtds:sqlserver://localhost:1433/db_spring");
 		ds.setUsername("sa");
 		ds.setPassword("");
 		dao.setDataSource(ds);
