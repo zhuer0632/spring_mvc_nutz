@@ -10,6 +10,13 @@
 		${path}
 		
 		<a href="${path}/Index/index.do">首页</a>
+		
+		
+		<br><br><br>
+		
+		<a href="${path}/testZh/index.do">测试01</a>
 
+		
+		
 	</body>
 </html>
